@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://accounts.magicbricks.com/userauth/login -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		
+
+
+
+
+ 
+
+
+		<title>User Login</title>
+
+		<!-- Google Analytics -->
+		<iframe src="javascript:void(0)" title="" role="presentation" style="width: 0px; height: 0px; border: 0px; display: none;" src="./User Login_files/saved_resource.html"></iframe><script type="text/javascript" async="" src="./User Login_files/analytics.js.download"></script><script type="text/javascript" async="" src="./User Login_files/linkid.js.download"></script><script type="text/javascript" async="" src="./User Login_files/js"></script><script src="./User Login_files/cb=gapi.loaded_1" async=""></script><script src="./User Login_files/sdk.js.download" async="" crossorigin="anonymous"></script><script async="" src="./User Login_files/beacon.js.download"></script><script src="./User Login_files/cb=gapi.loaded_0" async=""></script><script id="facebook-jssdk" src="./User Login_files/sdk(1).js.download"></script><script type="text/javascript" async="" src="./User Login_files/ecommerce.js.download"></script><script async="" src="./User Login_files/gtm.js.download"></script><script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			                })(window,document,'script','MB_GTM_dataLayer','GTM-N7Q8HKZ');
+			function mbga4(){
+				var commonjson;
+			    try{
+			    commonjson={event: 'event_tracking'};
+			    for(var i = 0; i < arguments.length; i++) {
+			        if(arguments[0]=='send'){
+			            if(typeof(arguments[i])== 'object'){
+			                var stringified = JSON.stringify(arguments[i]);
+			                stringified = stringified.replace('dimension', 'cd');
+			                stringified = stringified.replace('Dimension', 'cd');
+			                var jsonObject = JSON.parse(stringified);
+			                commonjson = {
+			                    ...commonjson,
+			                    ...jsonObject
+			                }
+			            }else{
+			                if(arguments[1]=='pageview'){
+			                    if(i==1){
+			                        commonjson = {
+			                            ...commonjson,
+			                            eventCategory : arguments[i]
+			                        }
+			                    }
+			                    if(arguments.length>2){
+			                        commonjson = {
+			                            ...commonjson,
+			                            eventLabel : arguments[2]
+			                        }
+			                    }else{
+			                        commonjson = {
+			                            ...commonjson,
+			                            eventLabel : window.location.href
+			                        }
+			                    }
+			                }
+			                if(arguments[1]=='event'){
+			                    if(i == 2){
+			                        commonjson = {
+			                            ...commonjson,
+			                            eventCategory : arguments[2]
+			                        }
+			                    }
+			                    if(i == 3){
+			                        commonjson = {
+			                            ...commonjson,
+			                            eventAction : arguments[3]
+			                        }
+			                    }
+			                    if(i == 4){
+			                        commonjson = {
+			                            ...commonjson,
+			                            eventLabel : arguments[4]
+			                        }
+			                    }
+			                }
+			            }
+			        }
+			    }
+			    console.log('commonjson is: '+commonjson);
+			    }catch(e){
+					 commonjson={
+			        event:'event_tracking',
+			        eventCategory : 'error_in_mbga4',
+			        eventLabel : arguments,
+			        eventAction : e
+			        }
+			        console.log('error in mbga4 function :'+e+' :for payload'+stringify(arguments));
+			    }
+			    MB_GTM_dataLayer.push(commonjson);
+			}
+			ga('create', 'UA-492553-10', 'auto');
+			ga('require', 'ecommerce');
+			mbga4('send', 'pageview');
+		</script>
+		<script async="" src="./User Login_files/analytics.js.download"></script>
+		<!-- End Google Analytics -->
+		
+		<style type="text/css">
+			@font-face {
+				src: url("https://cdn.staticmb.com/font/open-sans/Regular/OpenSans-Regular.eot?v=1.1.0");
+				src: url("https://cdn.staticmb.com/font/open-sans/Regular/OpenSans-Regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), local("Open Sans"), local("Open Sans Regular"), url("https://cdn.staticmb.com/font/open-sans/Regular/OpenSans-Regular.woff2?v=1.1.0") format("woff2"), url("https://cdn.staticmb.com/font/open-sans/Regular/OpenSans-Regular.woff?v=1.1.0") format("woff"), url("https://cdn.staticmb.com/font/open-sans/Regular/OpenSans-Regular.ttf?v=1.1.0") format("truetype"), url("https://cdn.staticmb.com/font/open-sans/Regular/OpenSans-Regular.svg?v=1.1.0#Regular") format("svg");
+				font-family: 'Open_Sans';
+				font-style: normal;
+				font-weight: 400;
+			}
+			@font-face {
+				src: url("https://cdn.staticmb.com/font/open-sans/Semibold/OpenSans-Semibold.eot?v=1.1.0");
+				src: url("https://cdn.staticmb.com/font/open-sans/Semibold/OpenSans-Semibold.eot?#iefix&v=1.1.0") format("embedded-opentype"), local("Open Sans"), local("Open Sans Semibold"), url("https://cdn.staticmb.com/font/open-sans/Semibold/OpenSans-Semibold.woff2?v=1.1.0") format("woff2"), url("https://cdn.staticmb.com/font/open-sans/Semibold/OpenSans-Semibold.woff?v=1.1.0") format("woff"), url("https://cdn.staticmb.com/font/open-sans/Semibold/OpenSans-Semibold.ttf?v=1.1.0") format("truetype"), url("https://cdn.staticmb.com/font/open-sans/Semibold/OpenSans-Semibold.svg?v=1.1.0#Semibold") format("svg");
+				font-family: 'Open_Sans';
+				font-style: normal;
+				font-weight: 600;
+			}
+			@font-face {
+				src: url("https://cdn.staticmb.com/font/open-sans/Bold/OpenSans-Bold.eot?v=1.1.0");
+				src: url("https://cdn.staticmb.com/font/open-sans/Bold/OpenSans-Bold.eot?#iefix&v=1.1.0") format("embedded-opentype"), local("Open Sans"), local("Open Sans Bold"), url("https://cdn.staticmb.com/font/open-sans/Bold/OpenSans-Bold.woff2?v=1.1.0") format("woff2"), url("https://cdn.staticmb.com/font/open-sans/Bold/OpenSans-Bold.woff?v=1.1.0") format("woff"), url("https://cdn.staticmb.com/font/open-sans/Bold/OpenSans-Bold.ttf?v=1.1.0") format("truetype"), url("https://cdn.staticmb.com/font/open-sans/Bold/OpenSans-Bold.svg?v=1.1.0#Bold") format("svg");
+				font-family: 'Open_Sans';
+				font-style: normal;
+				font-weight: 700;
+			}
+		</style>
+
+		<script language="javascript" src="./User Login_files/loginPrimary.js.download"></script><style type="text/css" id="operaUserStyle"></style>
+		<link rel="stylesheet" type="text/css" href="./User Login_files/login-web-page.css">
+
+	
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="SNZTV-2QGQC-ZKRGF-PJ67P-HD3HR",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"SNZTV-2QGQC-ZKRGF-PJ67P-HD3HR",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="fx4u6nfydi3iezx6ekbq-f-b96769bac-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"37","ak.cp":"873947","ak.ai":parseInt("557853",10),"ak.ol":"0","ak.cr":29,"ak.ipv":4,"ak.proto":"h2","ak.rid":"17edc8f1","ak.r":33600,"ak.a2":e,"ak.m":"dscj","ak.n":"essl","ak.bpcip":"45.249.79.0","ak.cport":55417,"ak.gh":"184.26.54.128","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1727931011","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==s12t4JuRDriZU7/ryp2bdH0K7bbEJ4kkcTc+Sf65jzJ9g3XPEUnPcutzgrjMK3c81v7AWJUK1fD/Us4zrZrhr33CuORHvmDqEwYUUqv9AU9coDArlOK4rMWyPmwFW/GqxWMXFcrG+XMIoacZNeTaxYz1PBgOAEGredl5g0+xVkncGkggAY0V7jXbezd6nesAfcWUWWT0v7Oznb2rGcmVnBVo6jupZRrmO/fm+yCk44kUpGtVsThMdoYLutlQmfHneSVPGfEh3i/iSXH8v+3Ljrnmj8Dp5BK+ILM7Xg7QjbBoLn3WnYVF3b1bsL0QpKva82ytxaXhpG+oC66lAXv6rpIRK/KrdjdMAkJkMMUWLQD0RogboKGcFUNG8SydPj4drwZ8+x3r31YIyagX2T329VULUVESB8UGyJNjkiHMajY=","ak.pv":"20","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><style>.abcRioButton{border-radius:1px;box-shadow:0 2px 4px 0 rgba(0,0,0,.25);-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s,box-shadow .218s;transition:background-color .218s,border-color .218s,box-shadow .218s;-webkit-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;color:#262626;cursor:pointer;outline:none;overflow:hidden;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}.abcRioButton:hover{box-shadow:0 0 3px 3px rgba(66,133,244,.3)}.abcRioButtonBlue{background-color:#4285f4;border:none;color:#fff}.abcRioButtonBlue:hover{background-color:#4285f4}.abcRioButtonBlue:active{background-color:#3367d6}.abcRioButtonLightBlue{background-color:#fff;color:#757575}.abcRioButtonLightBlue:active{background-color:#eee;color:#6d6d6d}.abcRioButtonIcon{float:left}.abcRioButtonBlue .abcRioButtonIcon{background-color:#fff;border-radius:1px}.abcRioButtonSvg{display:block}.abcRioButtonContents{font-family:Roboto,arial,sans-serif;font-size:14px;font-weight:500;letter-spacing:.21px;margin-left:6px;margin-right:6px;vertical-align:top}.abcRioButtonContentWrapper{height:100%;width:100%}.abcRioButtonBlue .abcRioButtonContentWrapper{border:1px solid transparent}.abcRioButtonErrorWrapper,.abcRioButtonWorkingWrapper{display:none;height:100%;width:100%}.abcRioButtonErrorIcon,.abcRioButtonWorkingIcon{margin-left:auto;margin-right:auto}.abcRioButtonErrorState,.abcRioButtonWorkingState{border:1px solid #d5d5d5;border:1px solid rgba(0,0,0,.17);box-shadow:0 1px 0 rgba(0,0,0,.05);color:#262626}.abcRioButtonErrorState:hover,.abcRioButtonWorkingState:hover{border:1px solid #aaa;border:1px solid rgba(0,0,0,.25);box-shadow:0 1px 0 rgba(0,0,0,.1)}.abcRioButtonErrorState:active,.abcRioButtonWorkingState:active{border:1px solid #aaa;border:1px solid rgba(0,0,0,.25);box-shadow:inset 0 1px 0 #ddd;color:#262626}.abcRioButtonWorkingState,.abcRioButtonWorkingState:hover{background-color:#f5f5f5}.abcRioButtonWorkingState:active{background-color:#e5e5e5}.abcRioButtonErrorState,.abcRioButtonErrorState:hover{background-color:#fff}.abcRioButtonErrorState:active{background-color:#e5e5e5}.abcRioButtonErrorState .abcRioButtonErrorWrapper,.abcRioButtonWorkingState .abcRioButtonWorkingWrapper{display:block}.abcRioButtonErrorState .abcRioButtonContentWrapper,.abcRioButtonErrorState .abcRioButtonWorkingWrapper,.abcRioButtonWorkingState .abcRioButtonContentWrapper{display:none} .-webkit-keyframes abcRioButtonWorkingIconPathSpinKeyframes {0% {-webkit-transform: rotate(0deg)}}</style><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+	
+	<body>
+		<header class="main-header">
+    <div class="dataContainer">
+        <div class="logo">
+            <a title="magicbricks.com" href="https://www.magicbricks.com/"></a>
+        </div>
+    </div>
+</header>
+		
+
+
+
+
+ 
+
+
+    <meta name="google-signin-client_id" content="672613711482-pdo5pqu004sc687fpb75lb300e7uur0f.apps.googleusercontent.com">
+
+
+    <script src="./User Login_files/api_client.js.download" gapi_processed="true"></script>
+    <script src="./User Login_files/platform.js.download" async="" defer="" gapi_processed="true"></script>
+
+    <!--  <script type="text/javascript" async="true" src="https://cdn.staticmb.com/loginstatic/js/rocketchat-include.js?2024-10-01T12:56:30Z"></script> -->
+
+    <script language="javascript" src="./User Login_files/fingerprint2.js.download"></script>
+    <script language="javascript">
+        var platform = 'WEB';
+
+    </script>
+
+    
+        
+        
+            <div class="web-page">
+                <div class="web-page__left">
+                    <div class="web-page__left__data">
+                        <div class="web-page__left__arrow"></div>
+                        <h3 class="web-page__left__heading">
+                            Things you Can Do with<br>Magicbricks Account
+                        </h3>
+                        <ul>
+                            <li>Post one Single Property for FREE</li>
+                            <li>Set property alerts for your requirement </li>
+                            <li>Get accessed by over 1 Lakh buyers </li>
+                            <li>Showcase your property as Rental, PG or for Sale</li>
+                            <li>Get instant queries over Phone, Email and SMS</li>
+                            <li>Performance in search &amp; Track responses &amp; views online </li>
+                            <li>Add detailed property information &amp; multiple photos per listing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="web-page__right">
+                    <div class="web-page__right__login">
+                        
+
+
+	
+	
+		<!--Login By Email or Mobile-->
+<input type="hidden" id="actionType">
+<div class="login-loader" id="login-loader" style="display: none;">
+	<div class="loader"></div>
+</div>
+
+<div class="login-container user-section" id="firstLoginDiv">
+	<div class="login-heading clearfix">
+		Login
+	</div>
+	<div class="login__optwrap">
+		<div class="login__optwrap--title">Are you</div>
+		<div class="filter__component">
+			<div class="filter__component__row" id="usertypeContainer">
+				<div class="filter__component__item">
+					<input class="filter__component__item__input" type="radio" name="usertype" id="loginTypeBuyer" value="Buyer_Owner" checked="" onchange="initaiteLogin();">
+					<label class="filter__component__item__label" for="loginTypeBuyer">Buyer/Owner</label>
+				</div>
+				<!-- <div class="filter__component__item">
+					<input class="filter__component__item__input" type="radio" name="usertype" id="loginTypeOwner" value="Owner" onchange="initaiteLogin();" />
+					<label class="filter__component__item__label" for='loginTypeOwner'  onclick="initaiteLogin();">Owner</label>
+				</div> -->
+				<div class="filter__component__item">
+					<input class="filter__component__item__input" type="radio" name="usertype" id="loginTypeAgent/Builder" value="Agent_Builder" onchange="initaiteLogin();">
+					<label class="filter__component__item__label" for="loginTypeAgent/Builder" onclick="initaiteLogin();">Agent/Builder</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="m-login">
+		<div class="m-login__fieldset">
+			<input class="m-login__input" type="text" value="" id="emailOrMobile" name="emailOrMobile" maxlength="100" autocomplete="off" required="required" onkeypress="detectEnterKey(event, validateLoginStep1);">
+			<label class="m-login__label" for="emailOrMobile" id="emailOrMobileLable">
+				Enter Mobile No.
+			</label>
+			<input type="hidden" name="loginType" id="loginType" value="">
+			<div id="step1Error" class="m-login__help-text"></div>
+		</div>
+		
+		<div class="signup__captcha validationDiv">
+       		<div class="signup__captcha__row">
+         		<div class="signup__captcha--graphic capta">
+           			<img src="./User Login_files/contentsimpleCaptcha" id="captchaImageSignIn" width="67" height="28">
+         		</div>
+				<div class="signup__captcha--ico-refresh" onclick="javascript:refreshCaptcha(&#39;SignIn&#39;);"></div>
+       			<div class="signup__captcha--textfield" id="captchaDivSignIn">
+          			<div id="captchaCodeSignIn" contenteditable="true" name="captchaCodeSignIn" class="signup__captcha--input" maxlength="3"></div>
+       			</div>
+    	   	</div>
+    	   	<div id="commentCaptchaErrSignIn" class="signup__captcha--error incorrect"></div>
+     	</div>
+
+		<div class="m-login__fieldset" style="padding-bottom:12px;">
+			<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" id="btnStep1" onclick="validateLoginStep1();">Next</button>
+		</div>
+
+		<div class="m-login__fieldset" style="padding-bottom:22px;">
+			<div class="m-login__need"><a href="javascript:void(0);" onclick="$(&#39;#needHelpOptions1&#39;).toggle();" class="help">Need help?</a></div>
+			<div class="m-login__need" id="needHelpOptions1" style="display:none;">
+				<a href="javascript:void(0);" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Login&#39;, &#39;Login_Needhelp_forgotpassword&#39;, &#39;&#39;); goToNextScreen(&#39;firstLoginDiv&#39;, &#39;forgotPassword&#39;);" class="need-link">Forgot Password</a><br>
+				<a href="javascript:void(0);" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Login&#39;, &#39;Login_Needhelp_forgotusername&#39;, &#39;&#39;); goToNextScreen(&#39;firstLoginDiv&#39;, &#39;forgotUsername&#39;);" class="need-link">Forgot Username</a>
+			</div>
+		</div>
+        
+        
+		<div id="login-with-social">
+			<div class="m-login__fieldset">
+				<div class="m-login__or">
+					<div class="m-login__or__text">Or login using</div>
+				</div>
+			</div>
+			<div class="m-login__fieldset">
+				<div class="m-login__social clearfix">
+					
+					<div class="m-login__social__item m-login__g" id="my-signin2"><div style="height:28px;width:240px;" class="abcRioButton abcRioButtonBlue"><div class="abcRioButtonContentWrapper"><div class="abcRioButtonIcon" style="padding:4px"><div style="width:18px;height:18px;" class="abcRioButtonSvgImageWithFallback abcRioButtonIconImage abcRioButtonIconImage18"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="abcRioButtonSvg"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg></div></div><span style="font-size:11px;line-height:26px;" class="abcRioButtonContents"><span id="not_signed_in1y8m8tnpg44b">Sign in with Google</span><span id="connected1y8m8tnpg44b" style="display:none">Signed in with Google</span></span></div></div></div>
+				</div>
+				<div id="socialLoginError" class="social-error"></div>
+			</div>
+		</div>
+	
+   
+	</div>
+	<div class="signup" id="signupid">
+		<div class="signup__text">
+			New to Magicbricks?
+			<a href="javascript:void(0);" id="popupSignupLink" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Login&#39;, &#39;Login_Signup&#39;, &#39;&#39;); goToNextScreen(&#39;firstLoginDiv&#39;, &#39;signUp&#39;); isdOnloadSelectedVal(&#39;regMobileIsd&#39;,&#39;regMobileIsdText&#39;)" class="signup__link">Sign Up</a>
+
+			
+		</div>
+	</div>
+</div>
+
+<!--Login By Email and Password-->
+<div class="login-container" style="display:none;" id="loginByEmailDiv">
+	<div class="login-heading clearfix">
+		<div class="login-back" onclick="goToPreviousScreen();"></div>
+		Login
+	</div>
+	<form action="https://accounts.magicbricks.com/userauth/loginuser" method="POST" id="loginForm" name="loginForm" novalidate="novalidate" onsubmit="return validateUserCrendential();">
+		<div class="m-login">
+			<div class="m-login__fieldset">
+				<label class="m-login__label filled-value">
+					Enter Email ID or Mobile No.
+				</label>
+				<div class="m-login__input checkUsernameField"></div>
+			</div>
+
+			<div class="m-login__fieldset" style="padding-bottom:25px;">
+				<input class="m-login__input" type="password" value="" name="password" id="password" maxlength="14" autocomplete="off">
+                <label class="m-login__label" for="password">
+					Password
+				</label>
+				<input type="hidden" name="username" id="username" value="">
+				<a href="javascript:void(0);" onclick="showPaswd();" id="showPassword" class="m-login__pass-show">SHOW</a>
+		        <a href="javascript:void(0);" style="display: none;" id="hidePassword" onclick="hidePaswd();" class="m-login__pass-show">HIDE</a>
+				<div class="m-login__help-text" id="pass_err"></div>
+			</div>
+
+			<div class="m-login__fieldset clearfix" style="padding-bottom:22px;">
+				<div class="m-login__remember m-login__checkbox" style="display:none;">
+					<input type="checkbox" class="m-login__checkbox__input" checked="checked" id="remember-me" name="remember-me" value="yes">
+					<label class="m-login__checkbox__label" for="remember-me">
+						Remember me
+					</label>
+				</div>
+				<div class="m-login__forgot">
+					<a href="javascript:void(0);" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Login&#39;, &#39;Login_Needhelp_forgotpassword&#39;, &#39;&#39;); goToNextScreen(&#39;loginByEmailDiv&#39;, &#39;forgotPassword&#39;);" class="help">Forgot Password?</a>
+				</div>
+			</div>
+
+			<div class="m-login__fieldset" style="padding-bottom:12px;">
+				<button class="m-login__btn m-login__btn--primary m-login__btn--block" type="submit" id="btnLogin">Login</button>
+			</div>
+			
+			<div class="m-login__need"><a href="javascript:void(0);" onclick="$(&#39;#needHelpOptions2&#39;).toggle();" class="help">Need help?</a></div>
+			<div class="m-login__need" id="needHelpOptions2" style="display:none;">
+				<a href="javascript:void(0);" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Login&#39;, &#39;Login_Needhelp_forgotpassword&#39;, &#39;&#39;); goToNextScreen(&#39;loginByEmailDiv&#39;, &#39;forgotPassword&#39;);" class="need-link">Forgot Password</a><br>
+				<a href="javascript:void(0);" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Login&#39;, &#39;Login_Needhelp_forgotusername&#39;, &#39;&#39;); goToNextScreen(&#39;loginByEmailDiv&#39;, &#39;forgotUsername&#39;);" class="need-link">Forgot Username</a>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!--Enter Mobile Number-->
+<div class="login-container" style="display:none;" id="enterMobileNumberDiv">
+	<div class="login-heading clearfix">
+		<div class="login-back" onclick="goToPreviousScreen();"></div>
+		Mobile Number
+	</div>
+	<div class="m-login__assistance pad-bottom-20" style="font-size:14px; line-height:normal;">No Mobile Number is linked with your account. Please enter your number to be updated in your profile.</div>
+	<div class="m-login">
+		<div class="m-login__fieldset">
+			<div class="m-login__country-isd">
+				<select id="mobileIsd" name="mobileIsd" class="m-login__select"></select>
+			</div>
+			<input type="text" class="m-login__input m-login__mobile-no" name="mobileNo" id="mobileNo" value="" maxlength="12" autocomplete="off" required="required">
+			<label class="m-login__label m-login__label-no" for="mobileNo">
+				Mobile Number
+			</label>
+			<div class="m-login__help-text" id="mobileNo_err"></div>
+		</div>
+		<button class="m-login__btn m-login__btn--primary m-login__btn--block" type="button" id="btnUpdateMobile" onclick="sendMobileOtp();">Update</button>
+	</div>
+</div>
+
+<!--Email Verification Link Sent-->
+ <div class="login-container" style="display:none;" id="emailIdVerificationLinkDiv">
+	<div class="login-heading clearfix">
+		Email Verification
+	</div>
+
+	<div class="m-login">
+		<div class="m-login__assistance pad-bottom-20">
+			A Verification Link has been sent to your Email ID <span id="maskedEmail" class="semibold"></span>. Check your Email &amp; click on the link to verify your account.			
+		</div>
+		<button class="m-login__btn m-login__btn--primary m-login__btn--block" type="button" onclick="storefingerprint(&#39;OauthLogin&#39;); document.loginForm.submit();">Continue</button>
+	</div>
+</div> 
+
+<!--Enter alternate email id for Dummy User-->
+<div class="login-container" style="display:none;" id="enterAltEmailIdDiv">
+	<div class="login-heading clearfix">
+		Alternate Email
+	</div>
+
+	<div class="m-login__fieldset">
+		<input class="m-login__input" type="text" value="" id="altEmailId" name="altEmailId" maxlength="100" autocomplete="off">
+		<label class="m-login__label" for="altEmailId">
+			Enter Email Id
+		</label>
+		<input type="hidden" name="loginType" id="loginType" value="">
+		<input type="hidden" name="signupflag" id="signupflag" value="">
+		<div class="m-login__help-text" id="altEmailId_err"></div>
+	</div>
+	<button class="m-login__btn m-login__btn--primary m-login__btn--block" type="button" id="btnUpdateAltEmailId" onclick="sendVerificationLinkForAltEmailId();">Update</button>
+</div>
+
+<!--Verification Code-->
+<div class="login-container" style="display:none; padding-bottom: 60px;" id="verifyOtpDiv">
+	<div class="login-heading clearfix">
+		Verify
+	</div>
+	<div class="m-login">
+		<div class="m-login__fieldset" style="padding-bottom: 20px;">
+			<div class="m-login__verify-label" id="otpHeader">Enter 4 digit Verification Code sent on</div>
+			<div class="m-login__email">
+				<span class="m-login__number-icon" id="whatsAppIco" style="display:none"></span><span class="email-number" id="maskedDetail"></span>, <span style="font-weight: normal;">if you are registered with us</span>
+			</div>
+		</div>
+		<div class="m-login__fieldset m-login__verify">
+			<input type="text" maxlength="1" class="m-login__input verify-input-otp" id="verify01" inputmode="numeric" pattern="[0-9]*" autocomplete="off" onkeypress="detectEnterKey(event, verifyOtp);"> 
+			<input type="text" maxlength="1" class="m-login__input verify-input-otp" id="verify02" inputmode="numeric" pattern="[0-9]*" autocomplete="off" onkeypress="detectEnterKey(event, verifyOtp);">
+			<input type="text" maxlength="1" class="m-login__input verify-input-otp" id="verify03" inputmode="numeric" pattern="[0-9]*" autocomplete="off" onkeypress="detectEnterKey(event, verifyOtp);">
+			<input type="text" maxlength="1" class="m-login__input verify-input-otp" id="verify04" inputmode="numeric" pattern="[0-9]*" autocomplete="off" onkeypress="detectEnterKey(event, verifyOtp);">
+			<!--input type="text" maxlength="1" class="m-login__input verify-input-otp" id="verify05" autocomplete="off" onKeyPress="detectEnterKey(event, verifyOtp);">
+			<input type="text" maxlength="1" class="m-login__input verify-input-otp" id="verify06" autocomplete="off" onKeyPress="detectEnterKey(event, verifyOtp);" -->
+			<div class="m-login__help-text" id="otp_error">Error</div>
+		</div>
+		<div class="m-login__fieldset" style="padding-bottom:0px;">
+			<button type="button" onclick="verifyOtp()" class="m-login__btn m-login__btn--primary m-login__btn--block">
+				Continue
+			</button>
+		</div>
+		<div id="timerDiv">You will receive OTP within <span id="timerSpan"></span> min</div>
+		<div class="resemdContHead">Did not get Verification Code?</div>
+		<div class="resemdCont rBorder wf" id="smsCodeSent"> <a href="javascript://" onclick="resendOtp(false);">Resend Code</a></div>
+		<div class="resemdCont ws" id="smsCodeSentOnCall"> <a href="javascript://" onclick="resendOtp(true);">Verify on Call</a></div>
+	</div>
+</div>
+
+<!--Enter email id in case of multiple users share same mobile number-->
+<div class="login-container" style="display:none;" id="multipleUsersByMobile">
+	<div class="login-heading clearfix">
+		<div class="login-back" onclick="goToPreviousScreen();"></div>
+		Email Id
+	</div>
+
+	<div class="m-login">
+		<div class="m-login__fieldset" style="padding-bottom: 20px;">
+			<div class="m-login__assistance pad-bottom-20">
+				Your Mobile No. is associated with multiple IDs. Please select one ID you would want to associate this number with.
+			</div>
+			<div id="userEmailList" class="webkit__scroll"></div>
+		</div>
+		<div class="m-login__fieldset">
+			<input type="text" class="m-login__input" id="emailIdMultipleUsers" value="" maxlength="100" autocomplete="off">
+			<label class="m-login__label" for="emailIdMultipleUsers">
+				Enter Email Id
+			</label>
+			<div class="m-login__help-text" id="emailIdMultipleUsersError">Error</div>
+		</div>
+		<div class="m-login__fieldset" style="padding-bottom:12px;">
+			<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" onclick="validateEmailIdForMobileBasedMultipleUsers();">
+				Proceed
+			</button>
+		</div>
+	</div>
+</div>
+
+<script>
+/* setTimeout(function () {
+	//var evt = document.createEvent('HTMLEvents');
+	evt.initEvent('resize', true, false);
+	window.dispatchEvent(evt);
+}, 1000); */
+document.getElementById("emailOrMobile").focus(); 
+$(document).ready(function(){
+	$("#login-loader").hide();
+	var newSignUp='';
+	if(newSignUp!=undefined && newSignUp!='' && newSignUp!=null){
+		// $("#firstLoginDiv").hide();
+		
+	}
+})
+
+
+</script>
+
+		<!--Username-->
+<div class="login-container" id="forgotUsername" style="display:none;">
+	<div class="login-heading clearfix" id="need-help-heading">
+		<div class="login-back" onclick="goToPreviousScreen(); $(&#39;#enter-mobile-username&#39;).val(&#39;&#39;);"></div>
+		Forgot Username
+	</div>
+
+	<div class="m-login">
+		<div class="m-login__fieldset">
+			<input type="text" class="m-login__input" id="enter-mobile-username" value="" autocomplete="off" maxlength="10">
+			<label class="m-login__label" for="enter-mobile-username">
+				Enter mobile number
+			</label>
+			<div class="m-login__help-text" id="forgot_username_err">Error</div>
+		</div>
+		<div class="m-login__fieldset" style="padding-bottom:12px;">
+			<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" onclick="validateForgotUsername(&#39;enter-mobile-username&#39;,&#39;forgot_username_err&#39;);">
+				Continue
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="login-container" style="display:none;" id="forgotUsernameSuccess">
+	<div class="login-heading clearfix">
+		Account Assistance
+	</div>
+
+	<div class="m-login">
+		<div class="m-login__fieldset" style="padding-bottom: 20px;">
+			<div class="m-login__assistance pad-bottom-20">
+				Your mobile number <span id="forgotUsername-mobile-div"></span> is associated with below username(s).
+				<br>Select your username to sign in:
+			</div>
+			<div id="usernameList" class="webkit__scroll"></div>
+			<div class="m-login__help-text" id="forgotUsernameSelErr">Error</div>
+		</div>
+		<div class="m-login__fieldset" style="padding-bottom:12px;">
+			<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" onclick="goToLogin();">
+				Proceed
+			</button>
+		</div>
+	</div>
+</div>
+
+<!--Reset Password-->
+<div class="login-container" id="forgotPassword" style="display:none;">
+	<div class="login-heading clearfix">
+		<div class="login-back" onclick="goToPreviousScreen(); $(&#39;#enter-email-mobile-password&#39;).val(&#39;&#39;);"></div>
+		Forgot Password
+	</div>
+	<div class="m-login">
+		<div class="m-login__fieldset">
+			<input type="text" class="m-login__input" id="enter-email-mobile-password" maxlength="10" autocomplete="off" onkeyup="validateMobileForgotPassword(&#39;enter-email-mobile-password&#39;,&#39;forgot_pass_err&#39;);">
+			<label class="m-login__label" for="enter-email-mobile-password">
+				Enter mobile number
+			</label>
+			<div class="m-login__help-text" id="forgot_pass_err">Error</div>
+		</div>
+		<div class="m-login__fieldset" style="padding-bottom:12px;">
+			<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" onclick="validateForgotPassword(&#39;enter-email-mobile-password&#39;,&#39;forgot_pass_err&#39;);">
+				Submit
+			</button>
+		</div>
+	</div>
+</div>
+
+<!--Reset Password-->
+<div class="login-container" id="resetPassword" style="display:none;">
+	<div class="login-heading clearfix">
+		Reset Password
+	</div>
+	<div class="m-login">
+		<div class="m-login__fieldset">
+			<input type="password" class="m-login__input" id="enter-new-password" maxlength="14" autocomplete="off" onfocus="$(&#39;.pwdHints&#39;).show();" onblur="$(&#39;.pwdHints&#39;).hide();" onkeypress="detectEnterKey(event, resetPassword);">
+			<label class="m-login__label" for="enter-new-password">
+				Enter New Password
+			</label>
+			<div class="pwdHints" style="display:none;">
+		    	<div class="pwdHintsHead">Password Rules</div>
+			    <ul>
+			        <li class="pwdHintsItem" id="pwdCharChk">Length must be between 8 to 14 characters.</li>
+			        <li class="pwdHintsItem" id="pwdNumChk">Must have at least 1 digit.</li>
+			        <li class="pwdHintsItem" id="pwdSpclChk">Must have at least 1 special character.</li>
+			        <li class="pwdHintsItem" id="pwdCapChk">Must have at least 1 alphabet.</li>
+			        <li class="pwdHintsItem" id="pwdWhtChk">Allowed special characters are !@#$%^&amp;*_.</li>
+			    </ul>
+		    </div>
+			<div class="m-login__help-text" id="enter-new-password-err">Error</div>
+		</div>
+		<div class="m-login__fieldset">
+			<input type="password" class="m-login__input" id="re-enter-new-password" maxlength="14" autocomplete="off" onkeypress="detectEnterKey(event, resetPassword);">
+			<label class="m-login__label" for="re-enter-new-password">
+				Re-enter New Password
+			</label>
+			<div class="m-login__help-text" id="re-enter-new-password-err">Error</div>
+		</div>
+		<div class="m-login__fieldset" style="padding-bottom:12px;">
+			<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" onclick="resetPassword();">
+				Submit
+			</button>
+		</div>
+	</div>
+</div>
+
+<!--Thanks-->
+<div class="login-container" id="thanks" style="display:none;">
+	<div class="login-heading clearfix">
+		Thanks
+	</div>
+	<div class="m-login">
+		<div class="m-login__thanks">
+			<div class="m-login__thanks-icon"></div>
+			<div class="m-login__thanks-heading clearfix">
+				Your password has been updated successfully.
+			</div>
+			
+			<div class="m-login__thanks-text">
+				A confirmation email has been sent on			
+			</div>
+			<div class="m-login__thanks-email" id="mailSentOn">
+			</div>
+			<div class="clearfix">
+				<div class="m-login__thanks-proceed">
+					Please Proceed to				
+				</div>
+				<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" onclick="window.location = &#39;login&#39;; ">
+					Login
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+		
+	    
+		
+			
+	
+	<!-- Begin comScore Tag -->
+	<script type="text/javascript">var _comscore = _comscore || [];_comscore.push({ c1: "2", c2: "26200502" });(function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s, el);})();</script>
+	<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=26200502&cv=2.0&cj=1" /></noscript>
+
+
+   <!-- End comScore Tag -->
+
+    	<input type="hidden" name="sourceCnd" id="sourceCnd" value="19433">
+
+	<div class="login-container" id="signUp" style="display:none;">
+		<div class="login-heading clearfix">
+			<div class="login-back" onclick="goToPreviousScreen();"></div>
+			Sign Up
+		</div>
+
+		<div class="m-login">
+			<div class="m-login__fieldset" style="padding-bottom:24px;">
+				<div class="m-login__label m-login__label--inline">
+					I am
+				</div>
+
+				<div class="m-login__remember m-login__radio pr-12">
+					<input type="radio" name="regUsertype" id="regUsertype-owner" class="m-login__radio__input" value="I" required="required" onchange="customRadioButton(this);">
+					<label class="m-login__radio__label" for="regUsertype-owner">
+						Buyer/Owner/Tenant
+					</label>
+				</div>
+
+				<div class="m-login__remember m-login__radio pr-12">
+					<input type="radio" name="regUsertype" id="regUsertype-agent" class="m-login__radio__input" value="A" required="required" onchange="customRadioButton(this);">
+					<label class="m-login__radio__label" for="regUsertype-agent">
+						Agent
+					</label>
+				</div>
+
+				<div class="m-login__remember m-login__radio">
+					<input type="radio" name="regUsertype" id="regUsertype-builder" class="m-login__radio__input" value="B" required="required" onchange="customRadioButton(this);">
+					<label class="m-login__radio__label" for="regUsertype-builder">
+						Builder
+					</label>
+				</div>
+				<div id="regUsertypeError" class="m-login__help-text"></div>
+			</div>
+		
+			<div class="m-login__fieldset">
+				<input type="text" id="regName" class="m-login__input" maxlength="30" required="required">
+				<label class="m-login__label" for="regName">
+					Name
+				</label>
+				<div class="m-login__help-text" id="regNameError">Error</div>
+			</div>
+
+			<div class="m-login__fieldset">
+				<input type="text" class="m-login__input" id="regEmailid" name="regEmailid" maxlength="100" required="required">
+				<label class="m-login__label" for="regEmailid">
+					Email
+				</label>
+				<div class="m-login__help-text" id="regEmailidError">Error</div>
+			</div>
+
+			<div class="m-login__fieldset" style="padding-bottom:25px;">
+				<input type="password" id="regPassword" name="regPassword" class="m-login__input" maxlength="14" onfocus="$(&#39;.pwdHints&#39;).show();" onblur="$(&#39;.pwdHints&#39;).hide();" autocomplete="off" required="required">
+				<label class="m-login__label" for="regPassword">
+					Password
+				</label>
+				<a href="javascript:void(0);" class="m-login__pass-show showPassword">SHOW</a>
+				
+				<div class="pwdHints" style="display:none;">
+					<div class="pwdHintsHead">Password Rules</div>
+			  		<ul>
+			      		<li class="pwdHintsItem" id="pwdCharChk">Length must be between 8 to 14 characters.</li>
+			      		<li class="pwdHintsItem" id="pwdNumChk">Must have at least 1 digit.</li>
+			      		<li class="pwdHintsItem" id="pwdSpclChk">Must have at least 1 special character.</li>
+			      		<li class="pwdHintsItem" id="pwdCapChk">Must have at least 1 alphabet.</li>
+			      		<li class="pwdHintsItem" id="pwdWhtChk">Allowed special characters are !@#$%^&amp;*_.</li>
+			  		</ul>
+				</div>
+				<div class="m-login__help-text" id="regPasswordError">Error</div>
+			</div>
+
+			<div class="m-login__fieldset">
+				<div class="m-login__country-isd">
+					<div class="country-code" id="regMobileIsdText" onclick="openIsdDrop(event, &#39;regMobileIsdUi&#39;);"></div>
+					<ul class="webkit__scroll" id="regMobileIsdUi">
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="50" class="selected">IND +91</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="51">USA +1</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="52">GBR +44</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="53">ARE +971</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="54">CAN +1</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="55">AUS +61</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="56">PAK +92</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="57">SAU +966</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="58">KWT +965</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="59">ZAF +27</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="60">AFG +93</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="61">ALB +355</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="62">DZA +213</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="63">ASM +684</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="64">AND +376</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="65">AGO +244</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="66">AIA +264</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="67">ATG +268</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="68">ARG +54</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="69">ARM +374</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="70">AUT +43</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="71">AZE +994</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="72">BHS +1242</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="73">BHR +973</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="74">BGD +880</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="75">BRB +1246</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="76">BLR +375</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="77">BEL +32</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="78">BLZ +501</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="79">BMU +1441</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="80">BTN +975</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="81">BOL +591</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="82">BIH +387</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="83">BWA +267</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="84">BRA +55</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="85">BRN +673</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="86">BGR +359</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="87">BFA +226</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="88">BDI +257</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="89">KHM +855</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="90">CMR +237</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="91">CPV +238</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="92">CYM +345</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="93">CAF +236</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="94">TCD +235</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="95">CHL +56</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="96">CHN +86</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="97">COL +57</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="98">COM +269</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="99">COD +243</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="100">COG +242</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="101">COK +682</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="102">CRI +506</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="103">CIV +225</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="104">HRV +385</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="105">CUB +53</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="106">CYP +357</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="107">CZE +420</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="108">DNK +45</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="109">DJI +253</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="110">DMA +767</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="111">DOM +1</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="112">TLS +670</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="113">ECU +593</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="114">EGY +20</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="115">SLV +503</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="116">GNQ +240</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="117">ERI +291</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="118">EST +372</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="119">ETH +251</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="120">FLK +500</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="121">FRO +298</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="122">FJI +679</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="123">FIN +358</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="124">FRA +33</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="125">GUF +594</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="126">PYF +689</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="127">GAB +241</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="128">GMB +220</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="129">GEO +995</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="130">DEU +49</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="131">GHA +233</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="132">GIB +350</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="133">GRC +30</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="134">GRL +299</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="135">GRD +473</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="136">GLP +590</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="137">GUM +671</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="138">GTM +502</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="139">GIN +224</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="140">GNB +245</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="141">GUY +592</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="142">HTI +509</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="143">HND +504</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="144">HKG +852</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="145">HUN +36</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="146">ISL +354</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="147">IDN +62</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="148">IRN +98</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="149">IRQ +964</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="150">IRL +353</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="151">ISR +972</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="152">ITA +39</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="153">JAM +1</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="154">JPN +81</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="155">JOR +962</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="156">KAZ +7</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="157">KEN +254</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="158">KIR +686</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="159">MDA +82</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="160">KGZ +996</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="161">LAO +856</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="162">LVA +371</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="163">LBN +961</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="164">LSO +266</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="165">LBR +231</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="166">LBY +218</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="167">LIE +423</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="168">LTU +370</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="169">LUX +352</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="170">MAC +853</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="171">MKD +389</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="172">MDG +261</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="173">MWI +265</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="174">MYS +60</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="175">MDV +960</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="176">MLI +223</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="177">MLT +356</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="178">MTQ +596</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="179">MRT +222</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="180">MUS +230</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="181">MYT +269</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="182">MEX +52</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="183">FSM +691</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="184">KOR +373</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="185">MCO +377</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="186">MNG +976</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="187">MSR +664</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="188">MAR +212</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="189">MOZ +258</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="190">MMR +95</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="191">NAM +264</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="192">NRU +674</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="193">NPL +977</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="194">ANT +599</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="195">NLD +31</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="196">NCL +687</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="197">NZL +64</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="198">NIC +505</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="199">NER +227</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="200">NGA +234</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="201">NIU +683</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="202">NFK +672</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="203">PRK +850</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="204">NOR +47</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="205">OMN +968</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="206">PAN +507</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="207">PNG +675</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="208">PRY +595</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="209">PER +51</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="210">PHL +63</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="211">PCN +649</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="212">POL +48</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="213">PRT +351</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="214">PRI +939</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="215">QAT +974</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="216">REU +262</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="217">ROU +40</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="218">RUS +7</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="219">RWA +250</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="220">WSM +685</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="221">SMR +378</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="222">STP +239</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="223">SEN +221</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="224">SCG +381</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="225">SYC +248</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="226">SLE +232</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="227">SGP +65</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="228">SVK +421</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="229">SVN +386</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="230">SLB +677</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="231">SOM +252</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="232">ESP +34</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="233">LKA +94</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="234">SHN +290</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="235">KNA +869</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="236">LCA +758</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="237">SPM +508</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="238">VCT +784</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="239">SDN +249</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="240">SUR +597</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="241">SWZ +268</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="242">SWE +46</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="243">CHE +41</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="244">SYR +963</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="245">TWN +886</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="246">TJK +992</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="247">TZA +255</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="248">THA +66</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="249">TGO +228</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="250">TKL +690</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="251">TON +676</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="252">TTO +868</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="253">TUN +216</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="254">TUR +90</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="255">TKM +993</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="256">TCA +649</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="257">TUV +688</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="258">UGA +256</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="259">UKR +380</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="260">URY +598</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="261">UZB +998</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="262">VUT +678</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="263">VEN +58</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="264">VNM +84</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="265">VGB +284</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="266">VIR +340</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="267">WLF +681</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="268">YEM +967</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="269">YUG +381</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="270">RNR +260</li>
+						
+							<li onclick="isdSetSelectedVal(this, &#39;regMobileIsd&#39;, &#39;regMobileIsdText&#39;);" value="271">ZWE +263</li>
+						
+					</ul>
+
+					<select class="m-login__select" id="regMobileIsd" name="regMobileIsd" style="display: none;">
+						
+							<option value="50" selected="selected">IND +91</option>
+						
+							<option value="51">USA +1</option>
+						
+							<option value="52">GBR +44</option>
+						
+							<option value="53">ARE +971</option>
+						
+							<option value="54">CAN +1</option>
+						
+							<option value="55">AUS +61</option>
+						
+							<option value="56">PAK +92</option>
+						
+							<option value="57">SAU +966</option>
+						
+							<option value="58">KWT +965</option>
+						
+							<option value="59">ZAF +27</option>
+						
+							<option value="60">AFG +93</option>
+						
+							<option value="61">ALB +355</option>
+						
+							<option value="62">DZA +213</option>
+						
+							<option value="63">ASM +684</option>
+						
+							<option value="64">AND +376</option>
+						
+							<option value="65">AGO +244</option>
+						
+							<option value="66">AIA +264</option>
+						
+							<option value="67">ATG +268</option>
+						
+							<option value="68">ARG +54</option>
+						
+							<option value="69">ARM +374</option>
+						
+							<option value="70">AUT +43</option>
+						
+							<option value="71">AZE +994</option>
+						
+							<option value="72">BHS +1242</option>
+						
+							<option value="73">BHR +973</option>
+						
+							<option value="74">BGD +880</option>
+						
+							<option value="75">BRB +1246</option>
+						
+							<option value="76">BLR +375</option>
+						
+							<option value="77">BEL +32</option>
+						
+							<option value="78">BLZ +501</option>
+						
+							<option value="79">BMU +1441</option>
+						
+							<option value="80">BTN +975</option>
+						
+							<option value="81">BOL +591</option>
+						
+							<option value="82">BIH +387</option>
+						
+							<option value="83">BWA +267</option>
+						
+							<option value="84">BRA +55</option>
+						
+							<option value="85">BRN +673</option>
+						
+							<option value="86">BGR +359</option>
+						
+							<option value="87">BFA +226</option>
+						
+							<option value="88">BDI +257</option>
+						
+							<option value="89">KHM +855</option>
+						
+							<option value="90">CMR +237</option>
+						
+							<option value="91">CPV +238</option>
+						
+							<option value="92">CYM +345</option>
+						
+							<option value="93">CAF +236</option>
+						
+							<option value="94">TCD +235</option>
+						
+							<option value="95">CHL +56</option>
+						
+							<option value="96">CHN +86</option>
+						
+							<option value="97">COL +57</option>
+						
+							<option value="98">COM +269</option>
+						
+							<option value="99">COD +243</option>
+						
+							<option value="100">COG +242</option>
+						
+							<option value="101">COK +682</option>
+						
+							<option value="102">CRI +506</option>
+						
+							<option value="103">CIV +225</option>
+						
+							<option value="104">HRV +385</option>
+						
+							<option value="105">CUB +53</option>
+						
+							<option value="106">CYP +357</option>
+						
+							<option value="107">CZE +420</option>
+						
+							<option value="108">DNK +45</option>
+						
+							<option value="109">DJI +253</option>
+						
+							<option value="110">DMA +767</option>
+						
+							<option value="111">DOM +1</option>
+						
+							<option value="112">TLS +670</option>
+						
+							<option value="113">ECU +593</option>
+						
+							<option value="114">EGY +20</option>
+						
+							<option value="115">SLV +503</option>
+						
+							<option value="116">GNQ +240</option>
+						
+							<option value="117">ERI +291</option>
+						
+							<option value="118">EST +372</option>
+						
+							<option value="119">ETH +251</option>
+						
+							<option value="120">FLK +500</option>
+						
+							<option value="121">FRO +298</option>
+						
+							<option value="122">FJI +679</option>
+						
+							<option value="123">FIN +358</option>
+						
+							<option value="124">FRA +33</option>
+						
+							<option value="125">GUF +594</option>
+						
+							<option value="126">PYF +689</option>
+						
+							<option value="127">GAB +241</option>
+						
+							<option value="128">GMB +220</option>
+						
+							<option value="129">GEO +995</option>
+						
+							<option value="130">DEU +49</option>
+						
+							<option value="131">GHA +233</option>
+						
+							<option value="132">GIB +350</option>
+						
+							<option value="133">GRC +30</option>
+						
+							<option value="134">GRL +299</option>
+						
+							<option value="135">GRD +473</option>
+						
+							<option value="136">GLP +590</option>
+						
+							<option value="137">GUM +671</option>
+						
+							<option value="138">GTM +502</option>
+						
+							<option value="139">GIN +224</option>
+						
+							<option value="140">GNB +245</option>
+						
+							<option value="141">GUY +592</option>
+						
+							<option value="142">HTI +509</option>
+						
+							<option value="143">HND +504</option>
+						
+							<option value="144">HKG +852</option>
+						
+							<option value="145">HUN +36</option>
+						
+							<option value="146">ISL +354</option>
+						
+							<option value="147">IDN +62</option>
+						
+							<option value="148">IRN +98</option>
+						
+							<option value="149">IRQ +964</option>
+						
+							<option value="150">IRL +353</option>
+						
+							<option value="151">ISR +972</option>
+						
+							<option value="152">ITA +39</option>
+						
+							<option value="153">JAM +1</option>
+						
+							<option value="154">JPN +81</option>
+						
+							<option value="155">JOR +962</option>
+						
+							<option value="156">KAZ +7</option>
+						
+							<option value="157">KEN +254</option>
+						
+							<option value="158">KIR +686</option>
+						
+							<option value="159">MDA +82</option>
+						
+							<option value="160">KGZ +996</option>
+						
+							<option value="161">LAO +856</option>
+						
+							<option value="162">LVA +371</option>
+						
+							<option value="163">LBN +961</option>
+						
+							<option value="164">LSO +266</option>
+						
+							<option value="165">LBR +231</option>
+						
+							<option value="166">LBY +218</option>
+						
+							<option value="167">LIE +423</option>
+						
+							<option value="168">LTU +370</option>
+						
+							<option value="169">LUX +352</option>
+						
+							<option value="170">MAC +853</option>
+						
+							<option value="171">MKD +389</option>
+						
+							<option value="172">MDG +261</option>
+						
+							<option value="173">MWI +265</option>
+						
+							<option value="174">MYS +60</option>
+						
+							<option value="175">MDV +960</option>
+						
+							<option value="176">MLI +223</option>
+						
+							<option value="177">MLT +356</option>
+						
+							<option value="178">MTQ +596</option>
+						
+							<option value="179">MRT +222</option>
+						
+							<option value="180">MUS +230</option>
+						
+							<option value="181">MYT +269</option>
+						
+							<option value="182">MEX +52</option>
+						
+							<option value="183">FSM +691</option>
+						
+							<option value="184">KOR +373</option>
+						
+							<option value="185">MCO +377</option>
+						
+							<option value="186">MNG +976</option>
+						
+							<option value="187">MSR +664</option>
+						
+							<option value="188">MAR +212</option>
+						
+							<option value="189">MOZ +258</option>
+						
+							<option value="190">MMR +95</option>
+						
+							<option value="191">NAM +264</option>
+						
+							<option value="192">NRU +674</option>
+						
+							<option value="193">NPL +977</option>
+						
+							<option value="194">ANT +599</option>
+						
+							<option value="195">NLD +31</option>
+						
+							<option value="196">NCL +687</option>
+						
+							<option value="197">NZL +64</option>
+						
+							<option value="198">NIC +505</option>
+						
+							<option value="199">NER +227</option>
+						
+							<option value="200">NGA +234</option>
+						
+							<option value="201">NIU +683</option>
+						
+							<option value="202">NFK +672</option>
+						
+							<option value="203">PRK +850</option>
+						
+							<option value="204">NOR +47</option>
+						
+							<option value="205">OMN +968</option>
+						
+							<option value="206">PAN +507</option>
+						
+							<option value="207">PNG +675</option>
+						
+							<option value="208">PRY +595</option>
+						
+							<option value="209">PER +51</option>
+						
+							<option value="210">PHL +63</option>
+						
+							<option value="211">PCN +649</option>
+						
+							<option value="212">POL +48</option>
+						
+							<option value="213">PRT +351</option>
+						
+							<option value="214">PRI +939</option>
+						
+							<option value="215">QAT +974</option>
+						
+							<option value="216">REU +262</option>
+						
+							<option value="217">ROU +40</option>
+						
+							<option value="218">RUS +7</option>
+						
+							<option value="219">RWA +250</option>
+						
+							<option value="220">WSM +685</option>
+						
+							<option value="221">SMR +378</option>
+						
+							<option value="222">STP +239</option>
+						
+							<option value="223">SEN +221</option>
+						
+							<option value="224">SCG +381</option>
+						
+							<option value="225">SYC +248</option>
+						
+							<option value="226">SLE +232</option>
+						
+							<option value="227">SGP +65</option>
+						
+							<option value="228">SVK +421</option>
+						
+							<option value="229">SVN +386</option>
+						
+							<option value="230">SLB +677</option>
+						
+							<option value="231">SOM +252</option>
+						
+							<option value="232">ESP +34</option>
+						
+							<option value="233">LKA +94</option>
+						
+							<option value="234">SHN +290</option>
+						
+							<option value="235">KNA +869</option>
+						
+							<option value="236">LCA +758</option>
+						
+							<option value="237">SPM +508</option>
+						
+							<option value="238">VCT +784</option>
+						
+							<option value="239">SDN +249</option>
+						
+							<option value="240">SUR +597</option>
+						
+							<option value="241">SWZ +268</option>
+						
+							<option value="242">SWE +46</option>
+						
+							<option value="243">CHE +41</option>
+						
+							<option value="244">SYR +963</option>
+						
+							<option value="245">TWN +886</option>
+						
+							<option value="246">TJK +992</option>
+						
+							<option value="247">TZA +255</option>
+						
+							<option value="248">THA +66</option>
+						
+							<option value="249">TGO +228</option>
+						
+							<option value="250">TKL +690</option>
+						
+							<option value="251">TON +676</option>
+						
+							<option value="252">TTO +868</option>
+						
+							<option value="253">TUN +216</option>
+						
+							<option value="254">TUR +90</option>
+						
+							<option value="255">TKM +993</option>
+						
+							<option value="256">TCA +649</option>
+						
+							<option value="257">TUV +688</option>
+						
+							<option value="258">UGA +256</option>
+						
+							<option value="259">UKR +380</option>
+						
+							<option value="260">URY +598</option>
+						
+							<option value="261">UZB +998</option>
+						
+							<option value="262">VUT +678</option>
+						
+							<option value="263">VEN +58</option>
+						
+							<option value="264">VNM +84</option>
+						
+							<option value="265">VGB +284</option>
+						
+							<option value="266">VIR +340</option>
+						
+							<option value="267">WLF +681</option>
+						
+							<option value="268">YEM +967</option>
+						
+							<option value="269">YUG +381</option>
+						
+							<option value="270">RNR +260</option>
+						
+							<option value="271">ZWE +263</option>
+						
+					</select>
+				</div>
+				<input type="text" id="regMobile" name="regMobile" class="m-login__input m-login__mobile-no" maxlength="10" required="required">
+				<label class="m-login__label m-login__label-no" for="regMobile">
+					Mobile Number
+				</label>
+				<div class="m-login__help-text" id="regMobileError">Error</div>
+			</div>
+
+
+		<div style="clear: both;"></div>
+		<div class="whatsapp-row" id="whatsapp-row" style="display:none;">
+			<div class="chk-notification">
+				<input type="checkbox" name="chk-whatsapp" id="chk-whatsapp" value="Y" checked="checked"> 
+				<label for="chk-whatsapp">I want to receive important updates on <span class="icon__whatsapp"></span>Whatsapp</label>
+			</div>
+		</div>
+
+		
+			<div class="m-login__disclaimer m-login__fieldset" style="padding-bottom: 12px;"> 
+                <div class="tc__checkbox">
+                   <input type="checkbox" name="chk-TNC" id="chk-TNC" value="N"> 
+                    <label for="chk-TNC">
+                        I agree to Magicbricks <a href="http://property.magicbricks.com/terms/terms.html" target="_blank">T&amp;C</a>, <a href="http://property.magicbricks.com/terms/terms.html" target="_blank">Privacy Policy</a>, &amp; <a href="http://property.magicbricks.com/terms/terms.html" target="_blank">Cookie Policy</a>
+                    </label>
+                </div>
+                <div class="m-login__help-text" id="tNCError">Error</div>
+            </div>
+            
+            <div class="signup__captcha validationDiv">
+        		<div class="signup__captcha__row">
+          			<div class="signup__captcha--graphic capta">
+            			<img src="./User Login_files/contentsimpleCaptcha(1)" id="captchaImageRegistration" width="67" height="28">
+          			</div>
+          			
+					<div class="signup__captcha--ico-refresh" onclick="javascript:refreshCaptcha(&#39;Registration&#39;);"></div>
+
+          			<div class="signup__captcha--textfield">
+          				<div id="captchaCodeRegistration" contenteditable="true" name="captchaCodeRegistration" class="signup__captcha--input" maxlength="3"></div>
+          			</div>
+          			<div id="commentCaptchaErrRegistration" class="signup__captcha--error incorrect"></div>
+        		</div>
+      		</div>
+			
+
+			<div class="m-login__fieldset" style="padding-bottom:24px;">
+				<button class="m-login__btn m-login__btn--primary m-login__btn--block" type="button" onclick="validateRegistration();">Sign Up</button>
+			</div>
+
+			<div class="m-login__fieldset" style="padding-bottom:0px;">
+				<div class="login-block">
+					Already registered?
+					<a href="javascript://" onclick="goToNextScreen(&#39;signUp&#39;, &#39;firstLoginDiv&#39;)" title="Login Now">Login Now</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+
+	<!--Signup Thanks-->
+	<div class="login-container" id="signUp-thanks" style="display:none;">
+		<div class="m-login m-login--signup">
+			<div class="m-login__thanks" style="padding:25px 0px;">
+				
+				<div class="m-login__thanks-heading clearfix">
+					<div class="m-login__thanks-icon"></div>
+					Thank You
+				</div>
+
+				<div class="m-login__thanks-text">
+					You have been registered successfully.
+				</div>
+				
+				<div class="clearfix">
+					<button type="button" class="m-login__btn m-login__btn--primary m-login__btn--block" onclick="goToNextScreen(&#39;signUp-thanks&#39;, &#39;firstLoginDiv&#39;);">
+						Login Now
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script language="javascript" src="./User Login_files/gdpr.js.download"></script>
+		<script type="text/javascript">
+	if(parent.parentSourceCnd){ 
+	$("#sourceCnd").val(window.parent.document.getElementById('parentSourceCnd').value);
+	 alert(window.parent.document.getElementById('parentSourceCnd').value);
+	}
+	
+    </script>
+
+		
+		
+		
+		<script type="javasctript">
+			document.cookie = "ACEGI_SECURITY_HASHED_REMEMBER_ME_COOKIE= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
+		</script>
+	
+
+
+<script>
+var newSignUp='';
+</script>
+
+                    </div>
+                </div>
+            </div>
+        
+    
+		<footer>
+    <div class="footerInner">
+        © Magicbricks
+
+        <div class="mbLink">
+            <a href="https://m.magicbricks.com/mbs/Sitemap.html">Sitemap<span></span></a>
+            <a href="https://m.magicbricks.com/mbs/about.html">About Us</a>
+            <a href="https://property.magicbricks.com/terms/terms.html">Terms &amp; Conditions<span></span></a>
+            <a href="https://m.magicbricks.com/mbs/privacy.html">Privacy</a>
+        </div>
+    </div>
+</footer>
+	
+
+<script type="text/javascript" id="">function setCookie(c,d,a){var b=new Date;b.setTime(b.getTime()+a);a="expires\x3d"+b.toUTCString();document.cookie=c+"\x3d"+d+";"+a+";path\x3d/"}urlParams=new URLSearchParams(window.location.search);gtm_source=urlParams.get("utm_source");gtm_medium=urlParams.get("utm_medium");gtm_campaign=urlParams.get("utm_campaign");gtm_content=urlParams.get("utm_content");
+null!==gtm_source&&null!==gtm_medium&&(setCookie("MB_GTM_source",gtm_source,864E5),setCookie("MB_GTM_medium",gtm_medium,864E5),setCookie("MB_GTM_campaign",gtm_campaign,864E5),setCookie("MB_GTM_content",gtm_content,864E5));</script><script type="text/javascript" id="">gtm_page_seq+=1;</script><iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin allow-storage-access-by-user-activation" allow="identity-credentials-get" aria-hidden="true" frame-border="0" src="./User Login_files/iframe.html" style="position: absolute; width: 1px; height: 1px; inset: -9999px; display: none;"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>
